@@ -1,6 +1,0 @@
--- 2019/09/20
-sudo rm /var/lib/apt/lists/lock
-sudo apt-get install build-essential
-sudo apt-get install python3.6
-
-gcc hello_world.c -o program

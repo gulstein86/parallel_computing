@@ -1,0 +1,3 @@
+create sample.c file
+gcc sample.c -o pointer
+./pointer
