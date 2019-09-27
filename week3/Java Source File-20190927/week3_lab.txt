@@ -1,3 +1,9 @@
 create sample.c file
 gcc sample.c -o pointer
 ./pointer
+
+gcc sample2.c -o sample -pthread
+time ./sample2
+
+gcc sample3.c -o sample3 -pthread
+./sample3
