@@ -1,0 +1,8 @@
+export PATH="$PATH:/home/aswadi/.openmpi/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/aswadi/.openmpi/lib/"
+
+echo export PATH="$PATH:/home/aswadi/.openmpi/bin" >> /home/aswadi/.bashrc
+echo export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/aswadi/.openmpi/lib/">> /home/aswadi/.bashrc
+
+git config --global user.email "aswadi1986@gmail.com"
+git config --global user.name "aswadi"
