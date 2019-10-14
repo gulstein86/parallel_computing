@@ -4,7 +4,12 @@
 #include <stdlib.h>                                                           
 #include <unistd.h>                                                             
                                                                                 
-void *thread(void *arg) {                                                                                                                                                                      
+void *thread(void *arg) {                                                       
+                                                                                
+  /* A simple loop with only puts() would allow a thread to write several       
+  lines in a row.                                                               
+  With pthread_yield(), each thread gives another thread a chance before        
+  it writes its next line */                                                    
                                                                                 
   while (1) {                                                                   
     puts((char*) arg);                                                          
@@ -32,5 +37,5 @@ int main() {
                                                                                 
   sleep(1);                                                                     
                                                                                 
-  exit(0);                                 
+  exit(0); /* this will tear all threads down */                                
 }  
